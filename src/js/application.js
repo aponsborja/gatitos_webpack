@@ -5,7 +5,7 @@ var names = ['Tiger', 'Samuel', 'Leeloo',
              'Beezy', 'Maple', 'Rodney',
              'Yonce', 'Reginald', 'Winifred',
              'Andreu', 'Jose', 'Kiko',
-             'David'];
+             'Davids'];
 
 var ages  = ['9 Weeks', '12 Weeks', '3 Months',
              '8 Weeks', '1 Year', '15 Weeks',
