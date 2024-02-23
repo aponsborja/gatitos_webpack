@@ -9,6 +9,13 @@ body {
   margin: 0;
   background-image: url("../img/background2.jpg"); }
 
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  float: left;
+}
+
 a {
   color: #506f8e; }
   a:hover {
