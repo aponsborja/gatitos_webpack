@@ -20,7 +20,7 @@ $('.kittens').find('li').each( function(i, el) {
   var img = $(el).find('img');
   var name = $(el).find('.name');
   var age = $(el).find('.age');
-  var vaccine = $(el).find('.vaccine'); // Corregido el typo en 'find'
+  var vaccine = $(el).find('.vaccine'); 
 
   var w = 250;
   var h = 250;
@@ -28,5 +28,5 @@ $('.kittens').find('li').each( function(i, el) {
   img.attr('src', 'http://placekitten.com/'+w+'/'+h+'?image='+i);
   name.text(names[i]);
   age.text(ages[i]);
-  vaccine.text(vaccines[i]); // Corregido el nombre de la variable aquí
+  vaccine.text(vaccines[i]);
 });
