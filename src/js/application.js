@@ -3,12 +3,16 @@ import $ from './jquery-2.1.0.min.js';
 var names = ['Tiger', 'Samuel', 'Leeloo',
              'Bella', 'Mo', 'Sly',
              'Beezy', 'Maple', 'Rodney',
-             'Yonce', 'Reginald', 'Winifred'];
+             'Yonce', 'Reginald', 'Winifred',
+             'Andreu', 'Jose', 'Kiko',
+             'David'];
 
 var ages  = ['9 Weeks', '12 Weeks', '3 Months',
              '8 Weeks', '1 Year', '15 Weeks',
              '4 Months', '2 Months', '14 Weeks',
-             '6 Months', '10 Weeks', '8 Months'];
+             '6 Months', '10 Weeks', '8 Months',
+             '3 Months', '5 Weeks', '5 Months',
+             '15 Weeks'];
 
 $('.kittens').find('li').each( function(i, el) {
   var img = $(el).find('img');
