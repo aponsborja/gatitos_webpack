@@ -18,15 +18,37 @@
             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="kittens.html" class="nav-link">Kittens</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" id="contactBtn" class="nav-link">Contacto</a></li>
             <li class="nav-item"><a href="https://www.tica.org/es/" class="nav-link" target="_blank">TICA</a></li>
           </ul>
         </nav>
         <img src="https://cdn.pixabay.com/photo/2022/07/27/06/46/adorable-7347323_1280.png" alt="Logo" class="logo">
         <h1>Kittens "R" Us</h1>
       </div>
-    </header>      
-    </header>
+    </header>    
+
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>New message</h2>
+        <form id="contactForm">
+          <label for="recipient">Recipient:</label><br>
+          <input type="text" id="recipient" name="recipient"><br><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br><br>
+          <button type="button" class="closeBtn">close</button>
+          <input type="submit" value="Send message">
+        </form> 
+      </div>
+    </div>
+    
+    <div id="messageSentModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Su mensaje ha sido enviado</p>
+        <button type="button" class="closeBtn">Cerrar</button>
+      </div>
+    </div>
 
     <div class="content">
       <div class="wrapper clearfix">

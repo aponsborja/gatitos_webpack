@@ -30,3 +30,41 @@ $('.kittens').find('li').each( function(i, el) {
   age.text(ages[i]);
   vaccine.text(vaccines[i]);
 });
+
+var contactModal = document.getElementById("contactModal");
+var messageSentModal = document.getElementById("messageSentModal");
+var btn = document.getElementById("contactBtn");
+var span = document.getElementsByClassName("close");
+var closeBtn = document.getElementsByClassName("closeBtn");
+var form = document.getElementById("contactForm");
+
+btn.onclick = function() {
+ contactModal.style.display = "block";
+}
+
+for (var i = 0; i < span.length; i++) {
+ span[i].onclick = function() {
+   contactModal.style.display = "none";
+   messageSentModal.style.display = "none";
+ }
+}
+
+for (var i = 0; i < closeBtn.length; i++) {
+ closeBtn[i].onclick = function() {
+   contactModal.style.display = "none";
+   messageSentModal.style.display = "none";
+ }
+}
+
+form.onsubmit = function(e) {
+ e.preventDefault();
+ contactModal.style.display = "none";
+ messageSentModal.style.display = "block";
+}
+
+window.onclick = function(event) {
+ if (event.target == contactModal || event.target == messageSentModal) {
+   contactModal.style.display = "none";
+   messageSentModal.style.display = "none";
+ }
+}
