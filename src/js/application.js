@@ -1,24 +1,50 @@
 import $ from './jquery-2.1.0.min.js';
 
-var names = ['Tiger', 'Samuel', 'Leeloo',
-             'Bella', 'Mo', 'Sly',
-             'Beezy', 'Maple', 'Rodney',
-             'Yonce', 'Reginald', 'Winifred'];
+var names = [
+  'Tiger',
+  'Samuel',
+  'Leeloo',
+  'Bella',
+  'Mo',
+  'Sly',
+  'Beezy',
+  'Maple',
+  'Rodney',
+  'Yonce',
+  'Reginald',
+  'Winifred',
+];
 
-var ages  = ['9 Weeks', '12 Weeks', '3 Months',
-             '8 Weeks', '1 Year', '15 Weeks',
-             '4 Months', '2 Months', '14 Weeks',
-             '6 Months', '10 Weeks', '8 Months'];
+var ages = [
+  '9 Weeks',
+  '12 Weeks',
+  '3 Months',
+  '8 Weeks',
+  '1 Year',
+  '15 Weeks',
+  '4 Months',
+  '2 Months',
+  '14 Weeks',
+  '6 Months',
+  '10 Weeks',
+  '8 Months',
+];
 
-$('.kittens').find('li').each( function(i, el) {
-  var img = $(el).find('img');
-  var name = $(el).find('.name');
-  var age = $(el).find('.age');
+var vacines = ['7', '5', '3', '4', '6', '2', '3', '4', '5', '6', '7', '8'];
 
-  var w = 250;
-  var h = 250;
+$('.kittens')
+  .find('li')
+  .each(function (i, el) {
+    var img = $(el).find('img');
+    var name = $(el).find('.name');
+    var age = $(el).find('.age');
+    var vacine = $(el).find('.vacine');
 
-  img.attr('src', 'http://placekitten.com/'+w+'/'+h+'?image='+i);
-  name.text(names[i]);
-  age.text(ages[i]);
-});
+    var w = 250;
+    var h = 250;
+
+    img.attr('src', 'http://placekitten.com/' + w + '/' + h + '?image=' + i);
+    name.text(names[i]);
+    age.text(ages[i]);
+    vacine.text(vacines[i]);
+  });
